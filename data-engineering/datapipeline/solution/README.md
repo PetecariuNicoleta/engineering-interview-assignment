@@ -20,10 +20,11 @@ The transformation logic written in pySpark could then run as scheduled job in d
 For deployment and version control i would store the code on Git where if the pipeline si small we can do manual deployment but if it is more complex we cand use a CI/CD pipeline for the automation of the deployment into cloud. 
 
 I would like to mention this several important aspects that needs to be taken in consideration before deploying the pipeline, and some question that i try to ask myself with every pipeline that i buid:
-    - Scalability (What happens if the dataset grows? Can this pipeline handle more data in the future?)
-    - Cost management (How does the cost grow with more data or more frequent runs?)
-    - Security (Who can access the data and the pipeline?)
-    - Monitoring (How do we know if the pipeline ran successfully?)
+
+- Scalability (What happens if the dataset grows? Can this pipeline handle more data in the future?)
+- Cost management (How does the cost grow with more data or more frequent runs?)
+- Security (Who can access the data and the pipeline?)
+- Monitoring (How do we know if the pipeline ran successfully?)
 
 ## How to run the pipeline:
 1. We can run the python3 data-engineering/datapipeline/solution/main.py command witch will start the pipeline
