@@ -2,7 +2,7 @@
 
 ## Solution descripton
 
-This pipeline reads the input files from the 'source-data' folder. After that we applie some transformations to the data, and then we create the output files into the 'result' folder. 
+This pipeline reads the input files from the `source-data` folder. After that we applie some transformations to the data, and then we create the output files into the `result` folder. 
 The programming language used to write this solution is Python.
 
 ## Requirments met:
@@ -27,8 +27,8 @@ I would like to mention this several important aspects that needs to be taken in
 - Monitoring (How do we know if the pipeline ran successfully?)
 
 ## How to run the pipeline:
-1. We can run the python3 data-engineering/datapipeline/solution/main.py command witch will start the pipeline
-2. To run the unit tests you can run the python3 -m pytest command in the root folder of the project. I have configured the project path so the test modules can import the pipeline utilities.
+1. We can run the `python3 data-engineering/datapipeline/solution/main.py` command witch will start the pipeline
+2. To run the unit tests you can run the `python3 -m pytest` command in the root folder of the project. I have configured the project path so the test modules can import the pipeline utilities.
 
 
 
