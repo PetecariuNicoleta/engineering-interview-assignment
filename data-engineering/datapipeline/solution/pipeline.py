@@ -64,9 +64,9 @@ def run_pipeline(input_folder: str, output_folder: str):
         df_year = df_final.filter(col("year") == year).drop("year")
         df_year.coalesce(1).write.mode("overwrite").json(temp_path)
 
-        #Because park writes output as distributed files in a folder
+        #Because spark writes output as distributed files in a folder
         #Since the assignment required a single JSON file per year
-        #I wrote the output to a temporary folder using coalesce(1) and then renamed the generated part file.
+        #I wrote the output to a temporary folder using coalesce(1) and then i renamed the generated part file.
         for file in os.listdir(temp_path):
             if file.startswith("part-") and file.endswith(".json"):
                 shutil.move(os.path.join(temp_path, file),f"{output_folder}/stats_{year}.json")
